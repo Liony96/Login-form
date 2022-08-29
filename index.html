@@ -1,43 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Astrounat wannabe</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="styles.css">
+  <title>Astronaut wannabe | Login</title>
 </head>
 <body>
-    <div class="header">Wanna be an astrounat? Take your first step here</div>
-    <div class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi neque a corporis! Culpa earum, nulla nesciunt itaque, enim amet praesentium ipsam laudantium iste natus perspiciatis tempora nemo fuga eaque. Excepturi.</div>
-    <form action="#" method="get">
-        <div>
-            <label for="user_first">First Name</label>
-            <input type="text" name="user_data" id="user_first" required>
+  <div class="container-form sign-up">
+    <div class="welcome-back">
+      <div class="message">
+        <h2>Welcome to Astronauts</h2>
+        <p>Already have an account? Sign in here</p>
+        <button class="sign-in-btn">Sign in</button>
+      </div>
+    </div>
+    <form action="get" class="form">
+      <h2 class="create-account">Create an account.</h2>
+      <div class="icons">
+        <div class="border-icon">
+          <i class='bx bxl-facebook-circle'></i>
         </div>
-        <div>
-            <label for="user_last">Last Name</label>
-            <input type="text" name="user_data" id="user_last" required>
+        <div class="border-icon">
+          <i class='bx bxl-github' ></i>
         </div>
-        <div>
-            <label for="user_email">Email address</label>
-            <input type="email" name="user_data" id="user_email" required>
+        <div class="border-icon">
+          <i class='bx bxl-linkedin-square' ></i>
         </div>
-        <div>
-            <label for="user_numer">Phone number</label>
-            <input type="tel" name="user_data" id="user_numer" required>
-        </div>
-        <div class="password">
-            <label for="password-1">Set your password</label>
-            <input type="password" id="password-1" required>
-        </div>
-        <div class="password">
-            <label for="password-2">Verify your password</label>
-            <input type="password" id="password-2" required>
-        </div>
-        <button type="submit">I'm ready</button>
-        <div class="sign-in">Already have an account? <a href="#">Sign in</a></div>
+      </div>
+      <p class="free-account">Create a free account.</p>
+      <input type="text" placeholder="Name">
+      <input type="email" placeholder="example@email.com" id="email">
+      <input type="password" placeholder="password" id="password-1">
+      <input type="password" placeholder="verify password" id="password-2">
+      <input type="button" value="Sign up">      
     </form>
-    <footer>Liony aklSJljasñdsadasd</footer>
+  </div>
+
+  <div class="container-form sign-in">
+    <form action="get" class="form">
+      <h2 class="create-account">Sign in</h2>
+      <div class="icons">
+        <div class="border-icon">
+          <i class='bx bxl-facebook-circle'></i>
+        </div>
+        <div class="border-icon">
+          <i class='bx bxl-github' ></i>
+        </div>
+        <div class="border-icon">
+          <i class='bx bxl-linkedin-square' ></i>
+        </div>
+      </div>
+      <p class="free-account">Don't have an account?</p>
+      <input type="email" placeholder="example@email.com" id="email-1">
+      <input type="password" placeholder="password" id="password">
+      <input type="button" value="Sign in">
+    </form>
+    <div class="welcome-back">
+      <div class="message">
+        <h2>Welcome back to Astronauts</h2>
+        <p>If you don't have an account? Sign up here</p>
+        <button class="sign-up-btn">Sign up</button>
+      </div>
+    </div>
+    
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
