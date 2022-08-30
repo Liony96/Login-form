@@ -9,3 +9,15 @@ document.addEventListener('click', e => {
         signUp.classList.toggle('active');
     }
 })
+
+const pass1 = document.getElementById('password-1');
+const pass2 = document.getElementById('password-2');
+const submitSignUp = document.getElementById('submit');
+
+submitSignUp.addEventListener('click', () => {
+    if (pass1.textContent != pass2.textContent) {
+        alert('Passwords does not match');
+        pass1.style.color = 'red';
+        pass2.style.color = 'red';
+    }
+})

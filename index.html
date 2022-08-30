@@ -31,11 +31,11 @@
         </div>
       </div>
       <p class="free-account">Create a free account.</p>
-      <input type="text" placeholder="Name">
-      <input type="email" placeholder="example@email.com" id="email">
-      <input type="password" placeholder="password" id="password-1">
-      <input type="password" placeholder="verify password" id="password-2">
-      <input type="button" value="Sign up">      
+      <input required type="text" placeholder="Name">
+      <input type="email" required placeholder="example@email.com" id="email">
+      <input required minlength="8" maxlength="16" type="password" placeholder="password" id="password-1">
+      <input required minlength="8" maxlength="16" type="password" placeholder="verify password" id="password-2">
+      <button type="submit" id="submit">Sign Up</button>      
     </form>
   </div>
 
@@ -56,12 +56,12 @@
       <p class="free-account">Don't have an account?</p>
       <input type="email" placeholder="example@email.com" id="email-1">
       <input type="password" placeholder="password" id="password">
-      <input type="button" value="Sign in">
+      <button type="submit">Sign In</button> 
     </form>
     <div class="welcome-back">
       <div class="message">
         <h2>Welcome back to Astronauts</h2>
-        <p>If you don't have an account? Sign up here</p>
+        <p>If you don't have an account ign up here</p>
         <button class="sign-up-btn">Sign up</button>
       </div>
     </div>
